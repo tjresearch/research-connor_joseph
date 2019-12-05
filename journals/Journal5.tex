@@ -1,0 +1,87 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{5}
+\def\daterange{9/30/19-10/7/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday September 23}
+		I made a program that could take the pixel values of images and put them next to the corresponding annotations in the csv file. I didn't test it though.
+		
+	    
+	    
+		\subsection*{Tuesday September 24}
+	    Tested the program I made on Monday, and debugged some things.
+	    One was the values being added to the end of the file instead of lines being added on to like I wanted. Another one was it wasn't skipping the first line (the name of the labels). 
+	    
+	    
+	    
+	    
+		\subsection*{Thursday September 26}
+	    Revised some nn code to make it usable for us. Haven't tested it too thoroughly yet.
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		9/23 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  we found that creating manual annotations took quite some time, so we didn't have time to do this. \\
+		\hline
+		9/30 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. & I did start and I also made a program to resize and convert to grey scale. \\
+		\hline
+		10/7 & Finish the NN and/or begin work on making a web app. & The first version is nearly finished. Probably one or two more days. \\
+		\hline
+		10/14 & Start the web app. Be able to put an image file into the web app and have annotations for it automatically generated. &  \\
+		\hline
+		10/21 & Finish the web app. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			The one or two more days of nn stuff will probably be done at home while I work on the web app in school because I feel like we are falling behind where we should be. That is also why I am predicting another week of web app stuff even though I don't think we will need it.
+			
+			The plan between me and my partner right now, is for me to start making the web app and for him to decrease the error in our nn.
+			
+			
+\end{document}

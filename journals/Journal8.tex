@@ -1,0 +1,97 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{8}
+\def\daterange{10/28/19-11/11/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday October 28}
+		I tried to make the webapp, but ran into a few errors. The biggest one is a dll load failed problem with the torch.(underscore)C module.
+		
+	    
+	    
+		\subsection*{Tuesday October 29}
+	    I looked for more solutions to my problem. Many people use a conda environment instead of my vs code environment, so specific advice was hard to find. That could also mean that I should use a conda env.
+	    
+	    
+	    
+	    
+		\subsection*{Thursday October 31}
+		I didn't feel like trying to make conda work. I have tried before and it was annoying, so I kept looking for solutions. Nothing too import came up. There was some talk about a vc redist that has something to do with dll files in vs code. I tried that and it didn't work. I also messed around with program files a bit. This probably wasn't the smartest thing to do, but it didn't hurt to try.
+		
+		
+		
+		\subsection*{Wednesday November 6}
+		I refreshed myself on the issue because didn't do much over the weekend.
+		
+		
+		
+		\subsection*{Friday November 9}
+		I found one stack overflow post that said that it could be related to the dll not having all of its dependencies. I had to download a program that tells me what the dll depends on and if it exists or not. That was the problem and I had to download the dependencies. This wasn't the first solution that came up probably because another similar issue occurred that affected more people, so my issue had less priority in the google search.
+	    
+	   
+	    
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		10/28 & Help my partner use google colab to train a nn. & It works with some error, but the error seems understandable. \\
+		\hline
+		11/4 & Put the export from the nn in the webapp code. & Could not because of import torch error. \\
+		\hline
+		11/11 & Put the export from the nn in the webapp code. & Fixed torch.\_C and base code, but still need to test. \\
+		\hline
+		11/18 & Be able to update the data set based on user feedback. &   \\
+		\hline
+		11/25 & Be able to retrain the nn based on the updated data. &   \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			So, the cuda download did have the dlls I was looking for. I was just looking in the wrong place. Over the weekend, I tried to get things working, and I messed up the image input. Then, I fixed it but that took a some time. On Monday I am going to test the export file. From what I can see, it should work on my CPU. I am worried about this retrain thing that we have planned.
+			
+			
+\end{document}

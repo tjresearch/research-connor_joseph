@@ -1,0 +1,94 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{7}
+\def\daterange{10/14/19-10/28/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Tuesday October 15}
+		I messed around with flask today. Not much progress.
+		
+	    
+	    
+		\subsection*{Thursday October 17}
+	    You told me to use streamlit for the webapp. I followed the tutorial and tested most of the things I would probably use. At the end of the period, I made a text input where the user can input a url. Then, I get the image from the url, turn it into a PIL image, and display it on the screen. 
+	    
+	    
+	    
+	    
+		\subsection*{Monday October 21}
+		(Some of this was on Friday and weekend too)
+		
+	    My partner was having trouble using google colab and pytorch to make a good nn that could detect the difference between images with the aftermath of fires, earthquakes, flooding, and hurricanes, so I decided to help him work out some bugs. My partner was basing the code off of some code he found on a website. I looked at it after I got an error that I couldn't seem to fix, and saw that it probably wasn't a colab file. 
+	    
+	    \subsection*{Tuesday October 22}
+	    I tried to transfer the given code to Visual Studio code. I almost got it to work but one of the imports couldn't find tools.nnwrap even though I installed tools.
+	    
+	    \subsection*{Thursday October 24}
+	    I remembered training a nn with fastai last year, so I figured I'd give that a shot. It worked out. I had around a 30 percent. It was mostly the hurricane and flooding that got mixed up, but that makes sense because hurricanes can cause flooding.
+	   
+	    
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		10/14 & Start the web app. Be able to put an image file into the web app and have annotations for it automatically generated. & I didn't really start it. I learned about how to actually do it. \\
+		\hline
+		10/21 & Be able to put an image file into the web app and have annotations for it automatically generated. & First part is done. \\
+		\hline
+		10/28 & Help my partner use google colab to train a nn. & It works with some error, but the error seems understandable. \\
+		\hline
+		11/4 & Put the export from the nn in the webapp code. &  \\
+		\hline
+		11/11 & Be able to tell the code if it is right or wrong through the web app and retrain based on that info.  &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			Streamlit works is easy to use. I haven't tested accessing the website from some other computer though. I helped my partner because he seemed like he was struggling a bit and I needed his part to be finished so I could complete mine. With the original pytorch version there were several bugs due to adapting the code to our data. We eventually got an error that was some thing like "cuDNN was not initialized" or something along those lines. Over this weekend, I tried to put the nn export into the webapp, and I think it will work if I don't get this error. So what I get happens when I try to import torch. In init.py it tries to import torch.(underscor)C but it says module not found.
+			
+			
+\end{document}

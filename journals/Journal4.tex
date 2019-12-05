@@ -1,0 +1,86 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{4}
+\def\daterange{9/23/19-9/30/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday September 23}
+		On Monday, I looked at a few dynamic neural networks. I gathered some examples and tried to figure out how I was going to code one. I started with a few lines.
+		
+	    
+	    
+		\subsection*{Tuesday September 24}
+	    I continued to try and code a dynamic neural network, but things became a little difficult. My partner and I decided that it would probably be easier to code a normal cnn and then work our way towards a dynamic neural network. I began to code a program to resize all the images in a file.
+	    
+	    
+	    
+		\subsection*{Thursday September 26}
+	    I finished the resizing code and added a function to make the images grey scale if needed. I also spent a bit of time trying to fix my demo code. 
+	    
+	    Explanation of why the demo didn't work: We have several different folders of images of different disaster types. Originally we pulled hundreds of images but then realized that was too much for us to handle at the moment. We changed chrome extensions from one that couldn't filter out image types to one that could. Then we just pulled around 150 jpg/jpeg images. We had coded our program to only keep jpg files for consistency reasons, but around 70 images of the 150 were jpeg files that got removed from the final batch leaving us with fewer than the necessary 100 images. To fix this I just changed the code to let jpeg and jpg through. This was fixed for the demo version. The newer version of the code was untested on the previous sets of images. There was an image in the demo set that had a "." which messed with the way we accessed files. This was the first time the demo failed. I could not remove that file automatically the way we were doing with other files because the "." was messing that up too. I wanted to fix the code so if the issue arose in the future, our code could handle the problem. I just had to add a try-except-continue to fix it. When I ran the code, the console output showed that it worked, but I didn't actually check the folder of all the renamed images. This was the second time the demo failed. I looked over the code again, and moved the try-except-continue somewhere else and it worked.
+	    
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		9/16 & Finalize dataset. Find an annotation tool to label images and prepare them for training a neural network. &  We decided to use google images unless we stumble across a ton of easy to use, good images. Decided on annotation tool and made code to do simple annotations. \\
+		\hline
+		9/23 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  we found that creating manual annotations took quite some time, so we didn't have time to do this. \\
+		\hline
+		9/30 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. & I did start and I also made a program to resize and convert to grey scale. \\
+		\hline
+		10/7 & Finish the NN and/or begin work on making a web app. &  \\
+		\hline
+		10/14 & Finish the web app. Be able to put an image file into the web app and have annotations for it automatically generated. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			I didn't do much NN stuff this week in class, so over the weekend I started to code one. It isn't finished yet, but it does make up for some of the lost class time. Another thing we will have to figure out at some point is what the standard image size should be. If it's too big there would be too much pixel data to handle and too small would result in a loss of detail. We'll just play around with that and figure out what works best most likely after we have a working NN.
+			
+			
+\end{document}

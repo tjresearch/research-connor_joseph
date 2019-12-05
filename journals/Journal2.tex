@@ -1,0 +1,89 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{1}
+\def\daterange{9/9/19-9/16/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday September 9}
+		
+		%NOTE: ****delete lipsum commands *******
+	    We planned on using some fancy tool to label images with the different categories.
+	    I found these and tried to make the last two work:
+	    
+	    Lionbridge
+	    
+        labelImg
+        
+        trainingdata.io
+	    
+	    
+		\subsection*{Tuesday September 10}
+	    I started working with labelImg. I spent a log time trying to get pip to work in VS Code. All the stuff online was had slightly wrong syntax, so it took me a while to figure out. I know how to pip install now though. I looked at how the program formats annotations. Then, I looked a little into pytorch dynamic NNs.
+	    
+		\subsection*{Thursday September 12}
+	    Today I was trying to code a program to annotate images to be positive for one label and negative for every other one. Then I saw that there were ways of editing the metadata of an image. I tried that. I downloaded a tool for that. There was limited documentation on setting the thing up and making it work.
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		9/2  & N/A & N/A \\
+		\hline
+		9/9 & Get a new project and get a dataset & Yes, I got a new project. We decided on using google images for a dataset. Other sources could be added and changed. \\
+		\hline
+		9/16  & Finalize dataset. Find an annotation tool to label images and prepare them for training a neural network. &  We decided to use google images unless we stumble across a ton of easy to use, good images. Decided on annotation tool and made code to do simple annotations. \\
+		\hline
+		9/23 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  \\
+		\hline
+		9/30 & Finish the NN and/or begin work on making a web app. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			There was a lot of indecision this week. On Friday, me and my partner were talking on the bus, and we wondered why we were trying to use these fancy tools when we could just make a simple csv file. Over the weekend we wrote a short program to take a folder of image files and write to a csv file the image path and a series of either 1's or 0's representing the labels.
+			
+			
+			
+\end{document}

@@ -1,0 +1,86 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{10}
+\def\daterange{11/18/19-11/26/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday November 18}
+		I looked up docker. It isn't what I thought it was, so that's too bad.
+		
+	    
+	    
+		\subsection*{Tuesday November 19}
+	    Tried to figure out how to use flask on Director. I think I figured out the basics.
+	    
+	    
+	    
+	    
+		\subsection*{Thursday November 21}
+		I made a thing on Director where it asks for username and password then redirects to another page. I saw that the other page can be a local host link so I ran streamlit on my computer and tried to use Director to access the page but I got a 405 error. It might work of we run streamlit from the director terminal, but that seems to no longer be working for some reason. The error is something like "no command 'streamlit' found" when I do "streamlit run webapp.py" in the terminal.
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		11/11 & Put the export from the nn in the webapp code. & Fixed torch.\_C and base code, but still need to test. \\
+		\hline
+		11/18 & Be able to update the data set based on user feedback. & Yes \\
+		\hline
+		11/25 & Be able to retrain the nn based on the updated data. & No \\
+		\hline
+		12/2 & Make the webapp accessible by other devices. &  \\
+		\hline
+		12/9 & Be able to retrain the nn based on the updated data. &  \\
+		\hline
+		Winter Goal & Have a webapp that takes the url of an image as an input and predicts its disaster type. If the answer is wrong and the user tells the webapp, we add the image to our dataset with annotations the user provides. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			Hopefully I can figure out how to make Director use strealit and go there by itself or else I'll have to recode the webapp. That's fine but streamlit looks nicer and is already done.
+			
+			
+\end{document}

@@ -1,0 +1,87 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{3}
+\def\daterange{9/16/19-9/23/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday September 16}
+		On Monday, I was just downloading a bunch of images, so I could manually annotate. At home me and my partner worked on creating a program that would take all jpg images in a folder and name them "1.jpg", "2.jpg", etc. We did this just for convenience. What we plan to do could probably work with the default names. The program also made a csv file for the annotations. It mostly worked.
+		
+	    
+	    
+		\subsection*{Tuesday September 17}
+	    I started to annotate a set of images, but I found a bug in the code. If the new name for the image already existed, the code would crash. It took me a while to figure that out. I got it fixed. It could still break with the same problem, but it's less likely and I can just manually remove the file that is causing the problem. I annotated the images for the rest of class.
+	    
+	    
+	    
+		\subsection*{Thursday September 19}
+	    Today I noticed another bug. Our program was not including jpeg files along with the jpg files. It didn't matter previously because we had enough extra images to fill in for the deleted images. It was a simple fix. I spent the rest of the class finishing up my annotations.
+	    
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		9/9  & Get a new project and get a dataset & Yes, I got a new project. We decided on using google images for a dataset. Other sources could be added and changed. \\
+		\hline
+		9/16 & Finalize dataset. Find an annotation tool to label images and prepare them for training a neural network. &  We decided to use google images unless we stumble across a ton of easy to use, good images. Decided on annotation tool and made code to do simple annotations. \\
+		\hline
+		9/23  & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  we found that creating manual annotations took quite some time, so we didn't have time to do this.\\
+		\hline
+		9/30 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  \\
+		\hline
+		10/7 & Finish the NN and/or begin work on making a web app. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			The file that renames files and creates the csv file is still a little broken. If the file is run two times, there is no guarantee that the "5.jpg" from one run will me the same as the "5.jpg" from another run. In the csv file, the files are ordered 1, 10, 100, 101, ... 2, 20, 200, .... It was annoying to deal with while annotating but it won't matter in the long run. 
+			
+			Since we took so long to annotate a relatively small amount of images, we are going to rotate the images slightly and/or resize them to add to our dataset without too much more extra work. If we have time later, we could maybe add more.
+			
+			
+			
+\end{document}

@@ -1,0 +1,90 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{6}
+\def\daterange{10/7/19-10/14/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday October 7}
+		I looked for ways to make a web app. After class, you recommended flask and my partner, Joseph, recommended the TJ Director Website @ https://director.tjhsst.edu/docs/
+		
+	    
+	    
+		\subsection*{Tuesday October 8}
+	    I tried to start on the director website because it can use flask. It was a little confusing. The intro documents are a little outdated and don't provide much information. I was pretty much just trying to get the page to run python code, but that didn't work. It didn't give much useful feedback to help me figure out what was going on. I might not have been looking in the right place though. 
+	    
+	    
+	    
+	    
+		\subsection*{Thursday October 10}
+	    I stopped trying to use Director because it lacks information. I just followed a tutorial for flask. It's a really long one. I'm still working on it. I'm using this one: https://blog.miguelgrinberg.com/
+	    post/the-flask-mega-tutorial-part-i-hello-world
+	   
+	    
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		9/30 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. & I did start and I also made a program to resize and convert to grey scale. \\
+		\hline
+		10/7 & Finish the NN and/or begin work on making a web app. & The first version is nearly finished. Probably one or two more days. \\
+		\hline
+		10/14 & Start the web app. Be able to put an image file into the web app and have annotations for it automatically generated. & I didn't really start it. I learned about how to actually do it. \\
+		\hline
+		10/21 & Be able to put an image file into the web app and have annotations for it automatically generated. &  \\
+		\hline
+		10/28 & Be able to tell the code if it is right or wrong through the web app and retrain based on that info. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			I feel like I wasted a day by looking at the Director website. The documentation for it seems old and incomplete, so I struggled through that for no reason. 
+			
+			I did find a tutorial for flask that seems pretty good, but it's kind of long. I'll probably just skip the useless stuff. For next week, I think I can finish the web app. If not, I'll try to finish over the weekend. A user should be able to upload an image, then I run it through code and spit out values. If I can get the input, run and display to work, that would be a success. I can worry about making it pretty later.
+			
+			$$ df = \nabla f \cdot d \vec{r} $$
+			
+\end{document}

@@ -1,0 +1,86 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{9}
+\def\daterange{11/11/19-11/18/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	
+	\vspace{-0.5em}
+		\subsection*{Monday November 11}
+		Started working on making the webapp use the nn.
+		
+	    
+	    
+		\subsection*{Tuesday November 12}
+	    I finished the work from Monday. You can input a url of an image and the webapp will display the image and give a prediction. The, there is a checkbox asking if the prediction is right. If the prediction is wrong the user can select the correct label and the image's url will be added to a csv file of that dataset.
+	    
+	    
+	    
+	    
+		\subsection*{Thursday November 14}
+		I couldn't get the webapp to open on something other than the host machine, so I looked up how to do it. The website I found used something called Docker to create a server for the webapp. I didn't go farther than that though. My partner wants to use a database to store our data. I don't know how necessary that will be, but I looked at things.
+	    
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		11/4 & Put the export from the nn in the webapp code. & Could not because of import torch error. \\
+		\hline
+		11/11 & Put the export from the nn in the webapp code. & Fixed torch.\_C and base code, but still need to test. \\
+		\hline
+		11/18 & Be able to update the data set based on user feedback. & Yes \\
+		\hline
+		11/25 & Be able to retrain the nn based on the updated data. &   \\
+		\hline
+		12/2 & Make the webapp accessible by other devices. &   \\
+		\hline
+		Winter Goal & Have a webapp that takes the url of an image as an input and predicts its disaster type. If the answer is wrong and the user tells the webapp, we add the image to our dataset with annotations the user provides. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			The second half of what I did on Tuesday updates the dataset, but I haven't tried updating then retraining yet. I don't know how necessary the database is, but things that I found were kind of expensive. I'm pretty sure that we could use onedrive or google. But again, right now, I'm not too sure if trying to work with a database is necessary. Also my Christmas goal seems a little too complete already. I might make it a little more difficult.
+			
+			
+\end{document}

@@ -1,0 +1,95 @@
+% Syslab Research Journal Template
+% By Patrick White
+% September 2019
+% version 1.1 - 9/5/2019
+
+% INSTRUCTIONS: Edit the file as appropriate and replace with your journal text. Do NOT edit
+%							any section headers or titles, tabling commands, fonts, spacing, sizes, etc.
+
+% -------  Do NOT edit this header
+\documentclass[letterpaper,11pt]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{palatino}
+\usepackage{lipsum}
+\def\hrulefill{\leavevmode\leaders\hrule height 20pt\hfill\kern\z@}
+
+% ------------- DO Edit these definitions ---------------------
+\def\name{Connor Grimberg}
+\def\period{1}
+\def\journalnum{1}
+\def\daterange{9/2/19-9/9/19}
+% ------------------ END ---------------------------------
+
+% Do NOT edit this
+\begin{document}
+	\thispagestyle{empty}
+	\begin{flushright}
+		{\Large Journal Report \journalnum} \\
+		\daterange\\
+		\name \\
+		Computer Systems Research Lab \\
+		Period \period, White
+		\end{flushright}
+	\hrule height 1pt
+% ------------------ END ---------------------------------%	
+	
+% ------------------- Begin Journal reporting HERE ---------------
+
+% ------ SECTION DAILY LOG -------------------------------------
+	\section*{Daily Log}
+	Detail for each day about what you researched, coded, debug, designed, created, etc. Informal style is OK.
+	
+	\vspace{-0.5em}
+		\subsection*{Thursday August 29}
+		
+		%NOTE: ****delete lipsum commands *******
+	    (Before project change)
+	    I researched the ARMA time series model and how applicable it was to my project. I wanted to find the best way/format to input data into whatever model I was going to use.
+	    
+	    I also brainstormed a new project and researched anomaly detection. I didn't find anything that interested me too much.
+		\subsection*{Tuesday September 3}
+	    I joined a project over the weekend and researched how I was going to accomplish my goals. I also looked at the how the CAP were uploading and annotating pictures to see requirements and improvements I could make. They had a variety of categories to be checked off on each picture relating to what was in it. They did not have the ability to automatically do it. 
+	    
+	    Since my partnership had not been approved yet, I just looked into the details of what I was going to be doing ad a little bit of how to make sure things were realistic.
+	    
+		\subsection*{Thursday September 5}
+	    Today I wrote my first few milestones.
+	    
+	    I tried to get data set images from a website called Digital Globe. It has a lot of pictures that seem very detailed. On one of their pages it shows them zoomed in on some buildings while still retaining good quality. I tried to search and download some images, but they seem to be out of focus or they just don't display. We are considering using google images instead because it seems easier to use. 
+	    
+	    I also had to figure out how to classify an image as multiple things without using multiple neural networks. I had seen previously some things related to the severity part of the project which could identify different parts of a picture as certain thing. I believe this could work, but it seems like this method is more work than needed because I just need to know it exists in the image, not where in the image.
+	    
+	    Milestones:
+	    1. Find a dataset that applies to our project. Then, annotate it and get it ready to be used in our neural network. Annotations will be disaster type and severity, but severity will come later. If we get very large pictures that will reduce the specificity of our annotations, we will split it up into smaller pieces.
+        2. Find an applicable neural net architecture to use. Eventually we want to be able to automatically annotate an image in one run of the NN instead of multiple sweeps through different ones for each annotation category, but we will probably use the multiple runs version to start with.
+        3. We will try to make a web app that takes an image and gives back the annotations. Location will be included as part of the description we create because that information will probably come with the picture’s data.
+        4. Here, we’ll combine the NN so that the image gets annotated based on disaster type in one run. We want to make sure that if there are two things going on, we say that in our annotations.
+
+
+	
+% ------ SECTION TIMELINE -------------------------------------
+	\newpage
+	\section*{Timeline}
+	\begin{tabular}{|p{1in}|p{2.5in}|p{2.5in}|}
+		\hline 
+	\textbf{Date} & \textbf{Goal} & \textbf{Met}\\ \hline
+		\hline
+		8/26  & N/A & N/A \\
+		\hline
+		9/2 weeks & N/A & N/A \\
+		\hline
+		9/9  & Get a new project and get a dataset & Yes, I got a new project. We decided on using google images for a dataset. Other sources could be added and changed. \\
+		\hline
+		9/16 & Finalize dataset. Find an annotation tool to label images and prepare them for training a neural network. &  \\
+		\hline
+		9/23 & Get an applicable neural network and start coding it. Goal for this is to classify if an image is something or not. &  \\
+		\hline
+	\end{tabular}
+
+
+% ------ SECTION REFLECTION  -------------------------------------
+	\section*{Reflection}
+			I got a new project which is good because it's difficult to think of one myself. I have a good idea on how to do some of the later things in the project. We need o find a good dataset with many pictures and the only idea we have so far is google after looking through a few other sites with pictures. We've started looking for tools to give our pictures annotations, so that we can train them with those labels. The next challenge I see is putting images of varying sizes into a NN. I know it's possible because I did it last year, but I didn't figure out how.
+			
+			
+\end{document}
