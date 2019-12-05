@@ -26,7 +26,3 @@ Running
 -------
 
 In the terminal cd to the location of the webapp. Then do "streamlit run webapp.py"
-
-
-# research-connor_joseph
-research-connor_joseph created by GitHub Classroom
