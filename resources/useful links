@@ -1,0 +1,106 @@
+IMAGE GATHERING AND ANNOTATION TOOLS
+Scraping images from websites? Although, I think this site costs money, but maybe we can find one for free. 
+https://www.scrape.works
+
+This one might work:
+https://pypi.org/project/ImageScraper/
+
+
+Imagery dataset I found. It would probably be best if we could get a tool that can scrape the images from this.
+https://www.ngdc.noaa.gov/hazardimages/#/
+
+MIT’s own image annotation tool.
+http://labelme2.csail.mit.edu/Release3.0/index.php
+
+
+https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e
+
+https://www.digitalglobe.com/ecosystem/open-data
+
+https://www.analyticsvidhya.com/blog/2019/04/build-first-multi-label-image-classification-model-python/
+
+Might be good to find more image sources:
+https://www.arcgis.com/apps/Cascade/index.html?appid=644b7ed508bd41c08e245c6a33fc7d63
+
+
+Code for downloading images from a website. But, will it work for my needs?
+https://www.shellvoide.com/python/scraping-and-download-all-images-from-a-web-page-python/
+
+How to create a deep learning dataset using Google Images
+https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/
+
+
+
+
+
+
+
+
+
+
+Annotation tools:
+Will probably work but seems like really professional and expensive
+https://lionbridge.ai/services/ai-training-data/?utm_source=google&utm_medium=cpc&utm_campaign=Image_Annotation_USA&utm_term=training-data&creative=358033531162&keyword=&matchtype=b&network=g&device=c&gclid=EAIaIQobChMI9Mae1-HD5AIVA5-fCh2pHwEaEAAYASABEgJfuPD_BwE
+
+I am not super sure how to use this or if it will work but it supposedly labels bounding boxes in an image
+https://github.com/tzutalin/labelImg/blob/master/labelImg.py
+
+Could work, free to an extent, was trying to make it work wasn’t working too well, intended for medicine but people use it for whatever.
+https://www.trainingdata.io
+
+Sign ups closed for now, but the fourth box down looks like what we need
+https://www.trainingdata.io
+
+
+
+
+
+
+For labelImg can open up the thing to manually do it and review things.
+Annotation format seems pretty simple when I looked at it in text file
+Can probably write to it with the xml extension in the format they have and make it work
+Need to figure out how to use pascal vos format to feed into and out of NN
+	Or we could just access label files and extract info
+Can probably write a code to annotate a bunch in that format as long as they are all the same annotation
+	Then we can rewrite for a different set after
+
+https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en
+
+WEB APPLICATION DEVELOPMENT
+Director Docs for creating web servers (I think it’s beginner-friendly, just perfect for us):
+https://director.tjhsst.edu/guide
+https://director.tjhsst.edu/docs
+
+
+“i believe i found a way to make the streamlit website accessible with the url using docker”
+“i havent tested yet but i found it in an article so it seems pretty credible”
+“doing this would mean the thing is entirely off director”
+“https://medium.com/@ansjin/how-to-create-and-deploy-data-exploration-web-app-easily-using-python-a03c4b8a1f3e”
+“at the bottom”
+
+
+
+
+
+
+NEURAL NETWORKS
+Implementation of a CNN on multi-label classification:
+https://machinelearningmastery.com/how-to-develop-a-convolutional-neural-network-to-classify-satellite-photos-of-the-amazon-rainforest/
+
+AUGMENTOR: Useful for increasing our dataset:
+https://github.com/mdbloice/Augmentor
+
+Perhaps useful for testing out our neural network:
+https://towardsdatascience.com/cross-validation-70289113a072
+
+https://www.oreilly.com/library/view/dynamic-neural-network/9781789610314/
+^might help with putting weird sized pictures in
+White also suggest less cool methods like squish or crop (the middle of) the image
+
+https://medium.com/@ipaar3/how-i-built-a-convolutional-image-classifier-using-tensorflow-from-scratch-f852c34e1c95
+^^convolutional neural network from scratch
+
+Convolutional Neural Network with folders of images:
+https://www.analyticsvidhya.com/blog/2019/10/building-image-classification-models-cnn-pytorch/
+
+
