@@ -27,5 +27,5 @@ In the terminal cd to the location of the webapp. Then do "streamlit run webapp.
 
 Website
 -------
-disaster_autotations.sites.tjhsst.edu
+[a link] disaster_autotations.sites.tjhsst.edu
 
