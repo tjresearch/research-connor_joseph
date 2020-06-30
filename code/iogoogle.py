@@ -7,8 +7,8 @@ import pickle
 # gauth.LocalWebserverAuth() # client_secrets.json need to be in the same directory as the script     #
 # drive = GoogleDrive(gauth)                                                                          #
                                                                                                       #
-# with open("auth.pkl", 'wb') as output:                                                              #
-#   pickle.dump(drive, output)                                                                        # Makes it so I don't have to 
+#with open("auth.pkl", 'wb') as output:                                                              #
+#  pickle.dump(drive, output)                                                                        # Makes it so I don't have to
                                                                                                       # reauthorize every time.
 drive = "insantiating"                                                                                # May need to do this once every
 with open("auth.pkl", 'rb') as input:                                                                 # so often though
@@ -32,12 +32,11 @@ for file in fileList:
 
 
 # # View all folders and file in your Google Drive
-# fileList = drive.ListFile({'q': "'1O05mvsXheQUR5xLoPKhmjuVffnHB4-1_' in parents and trashed=false"}).GetList() # that weird jjumble of stuff is the fodler id it is in the folder url
-# for file in fileList:
-#   print('Title: %s, ID: %s' % (file['title'], file['id']))
-#   # Get the folder ID that you want
-#   if(file['title'] == "To Share"):
-#       fileID = file['id']
+
+  #print('Title: %s, ID: %s' % (file['title'], file['id']))
+  # Get the folder ID that you want
+  #if(file['title'] == "To Share"):
+  #    fileID = file['id']
 
 
 # # Downloads to the same folder as this code

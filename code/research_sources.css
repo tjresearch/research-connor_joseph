@@ -1,0 +1,9 @@
+pre {
+    font-family: "Times New Roman";
+    /*text-align: center;*/
+}
+
+body {
+    position: absolute;
+    left: 23%;
+}
