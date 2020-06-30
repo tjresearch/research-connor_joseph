@@ -1,18 +1,17 @@
-Automatic Image Annotation
+Image Autotations
 --------------------------
 --------------------------
 
 
 Overview
 --------
-This project is a collaboration between Connor Grimberg and Joseph Lee. Our goal is to use a convolutional neural network on a web application to identify types of disasters in images. Our current goal is to have our neural network perform multi-label classification, identifying not only the type of disaster found in the image but also relevant details important for search and rescue teams, such as damage done to buildings and / or vegetation.(Add more to this as we progress)
+This repository contains the code and other files written during our senior research project. Our goal is to use a convolutional neural network on a web application to identify types of disasters in images. We have two convolutional neural networks, one for multi-class classification, identifying disaster type, and another for multi-label classification, identifying not only the type of disaster found in the image but also relevant details important for search and rescue teams, such as damage done to buildings and/or vegetation
 
 
 Requirements
 ------------
 
-Python 3.7
-pytorch 1.3.0
+We used Python, PyTorch, fast.ai, streamlit
 
 
 Installation
