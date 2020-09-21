@@ -6,9 +6,17 @@ Disaster Autotations
 
 The "code" folder includes Jupyter Notebooks that we used to train the artificial intelligence model (using Convolutional Neural Network frameworks), in addition to all the files used for the web application development. 
 
-gdrive_fastai_CNN.py was the "final draft" for the single-label neural network model. 
 
+Neural network training files:
+gdrive_fastai_CNN.ipynb was the "final draft" for the single-label neural network model. 
+MultiLabel NN Training.ipynb was the "final draft" for the multi-label neural network model. 
+
+All other Jupyter notebooks were "rough drafts." We decided to move on with new Jupyter notebooks, some of which ended up as "final drafts."
+
+
+Web application files:
 "autotations.py" was the Python file responsible for running the web application. 
+(anything else with the commit message "Director code" means that it was a file used for the web app development process of our project.) 
 
 (Insert web app development file structure here). 
 
