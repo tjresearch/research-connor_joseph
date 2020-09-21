@@ -28,3 +28,5 @@ In the terminal cd to the location of the webapp. Then do "streamlit run webapp.
 Website
 -------
 https://disaster_autotations.sites.tjhsst.edu
+
+(used to be open-access, but now restricted. I have plans to make the project website hosted at a different online location.) 
