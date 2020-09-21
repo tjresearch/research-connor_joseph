@@ -38,7 +38,7 @@ We used Python, PyTorch (ended up not working) framework, fast.ai (ended up work
 Installation
 ------------
 
-Download all the files and change the path variable in "autotations.py" to the location of the "export.pkl" file.
+Clone this project or download all the files under the "code" folder and change the path variable in "autotations.py" to the location of the "export.pkl" file.
 
 
 Running
