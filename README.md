@@ -1,7 +1,9 @@
-Image Autotations
+Disaster Autotations
 --------------------------
 --------------------------
+Note: This is currently still a work in progress. 
 
+* I will upload the remaining necessary files the next time I have a chance to. 
 
 Overview
 --------
@@ -11,7 +13,7 @@ This repository contains the code and other files written during our senior rese
 Requirements
 ------------
 
-We used Python, PyTorch, fast.ai, streamlit
+We used Python, PyTorch (ended up not working) framework, fast.ai (ended up working) framework, Streamlit API
 
 
 Installation
