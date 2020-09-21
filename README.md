@@ -1,9 +1,16 @@
 Disaster Autotations
 --------------------------
 --------------------------
-Note: This is currently still a work in progress. 
 
-* I will upload the remaining necessary files the next time I have a chance to. 
+* Note: still work in progress. (I have yet to test if the instructions below will actually work, since the "code" folder has code from all over the place. Hopefully though, observing the specified files mentioned below should give you an idea.) 
+
+The "code" folder includes Jupyter Notebooks that we used to train the artificial intelligence model (using Convolutional Neural Network frameworks), in addition to all the files used for the web application development. 
+
+gdrive_fastai_CNN.py was the "final draft" for the single-label neural network model. 
+
+"autotations.py" was the Python file responsible for running the web application. 
+
+(Insert web app development file structure here). 
 
 Overview
 --------
@@ -19,13 +26,13 @@ We used Python, PyTorch (ended up not working) framework, fast.ai (ended up work
 Installation
 ------------
 
-Download all the files and change the path variable in "webapp.py" to the location of the "export.pkl" file.
+Download all the files and change the path variable in "autotations.py" to the location of the "export.pkl" file.
 
 
 Running
 -------
 
-In the terminal cd to the location of the webapp. Then do "streamlit run webapp.py"
+In the terminal change directory to "code" and then to "autotations.py". Then do "streamlit run webapp.py"
 
 Website
 -------
