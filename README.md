@@ -4,6 +4,15 @@ Disaster Autotations
 
 * Note: still work in progress. (I have yet to test if the instructions below will actually work, since the "code" folder has code from all over the place. Hopefully though, observing the specified files mentioned below should give you an idea.) 
 
+
+
+General Overview
+----------------
+This repository contains the code and other files written during our senior research project. Our goal is to use a convolutional neural network on a web application to identify types of disasters in images. We have two convolutional neural networks, one for multi-class classification, identifying disaster type, and another for multi-label classification, identifying not only the type of disaster found in the image but also relevant details important for search and rescue teams, such as damage done to buildings and/or vegetation.
+
+
+Code Overview
+-------------
 The "code" folder includes Jupyter Notebooks that we used to train the artificial intelligence model (using Convolutional Neural Network frameworks), in addition to all the files used for the web application development. 
 
 
@@ -19,11 +28,6 @@ Web application files:
 (Anything else with the commit message "Director Code" means that it was a file used for the web app development process of our project.) 
 
 (Insert web app development file structure here). 
-
-Overview
---------
-This repository contains the code and other files written during our senior research project. Our goal is to use a convolutional neural network on a web application to identify types of disasters in images. We have two convolutional neural networks, one for multi-class classification, identifying disaster type, and another for multi-label classification, identifying not only the type of disaster found in the image but also relevant details important for search and rescue teams, such as damage done to buildings and/or vegetation.
-
 
 Requirements
 ------------
