@@ -16,7 +16,7 @@ All other Jupyter notebooks were "rough drafts." We decided to move on with new 
 
 Web application files:
 "autotations.py" was the Python file responsible for running the web application. 
-(anything else with the commit message "Director code" means that it was a file used for the web app development process of our project.) 
+(Anything else with the commit message "Director code" means that it was a file used for the web app development process of our project.) 
 
 (Insert web app development file structure here). 
 
