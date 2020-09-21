@@ -44,7 +44,7 @@ Download all the files and change the path variable in "autotations.py" to the l
 Running
 -------
 
-In the terminal change directory to "code" and then to "autotations.py". Then do "streamlit run webapp.py"
+In the terminal change directory to "code" and then to "autotations.py". Then do "streamlit run autotations.py"
 
 Website
 -------
