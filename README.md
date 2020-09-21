@@ -2,7 +2,7 @@ Disaster Autotations
 --------------------------
 --------------------------
 
-* Note: still work in progress. (I have yet to test if the instructions below will actually work, since the "code" folder has code from all over the place. Hopefully though, observing the specified files mentioned below should give you an idea.) 
+* Note: still work in progress. (I have yet to test if the instructions below will actually work.) Hopefully though, the rest of this README should give you a solid foundation of this project's structure. 
 
 
 
