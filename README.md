@@ -43,7 +43,7 @@ Installation
 Clone this project or download all the files under the "code" folder and change the path variable in "autotations.py" to the location of the "export.pkl" file.
 
 
-Running
+How to Run
 -------
 
 (Ignore below for now; work in progress)
