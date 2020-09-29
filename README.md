@@ -46,10 +46,11 @@ Clone this project or download all the files under the "code" folder and change 
 Running
 -------
 
+(Ignore below for now; work in progress)
 In the terminal change directory to "code" and then to "autotations.py". Then do "streamlit run autotations.py"
 
 Website
 -------
 https://disaster_autotations.sites.tjhsst.edu
 
-(used to be open-access, but now restricted. I have plans to make the project website hosted at a different online location.) 
+(used to be open-access, but now restricted (this was hosted on school servers). I have plans to make the project website hosted at a different online location.) 
