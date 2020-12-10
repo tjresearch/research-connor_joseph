@@ -4,7 +4,9 @@ Disaster Autotations
 
 * Note: still work in progress. (I have yet to test if the instructions below will actually work.) Hopefully though, the rest of this README should give you a solid foundation of this project's structure. 
 
-
+Video Presentation
+----------------
+https://www.youtube.com/watch?v=l40CRMz0cWo
 
 General Overview
 ----------------
