@@ -6,7 +6,7 @@ Disaster Autotations
 
 Video Presentation
 ----------------
-youtu.be/l40CRMz0cWo
+[youtu.be/l40CRMz0cWo](https://youtu.be/l40CRMz0cWo)
 
 General Overview
 ----------------
